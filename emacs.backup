@@ -17,18 +17,23 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
 ;;keep cursor at same position when scrolling
 ;;(setq scroll-preserve-screen-position 1)
+
 ;;scroll window up/down by one line
-(global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
-(global-set-key (kbd "M-p") (kbd "C-u 1 M-v"))
+;;(global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
+;;(global-set-key (kbd "M-p") (kbd "C-u 1 M-v"))
+
 ;; for smooth scrolling and disabling the automatic recentering of emacs when moving the cursor
 (setq scroll-margin 0
 scroll-conservatively 10000
 scroll-up-aggressively 0.01
 scroll-down-aggressively 0.01)
+
 (setq make-backup-files nil) ; stop creating backup~ files
 (setq auto-save-default nil) ; stop creating #autosave# files
+
 ;; set linenumber
 (global-linum-mode t)
 
